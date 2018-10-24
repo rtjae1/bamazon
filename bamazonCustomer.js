@@ -104,9 +104,8 @@ function endConnection() {
             message: 'Would you like to purchase another product?'
         }
     ]).then(function (answer) {
-        // console.log(answer.confirm);
         if (answer.confirm) {
-            displayProducts();
+            start();
         }
         else {
             connection.end();
